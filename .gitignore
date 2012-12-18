@@ -1,0 +1,7 @@
+/vendor/*
+/components/*
+/.sass-cache/*
+/scss/.sass-cache/*
+/scss/foundation/*
+composer.phar
+.DS_STORE

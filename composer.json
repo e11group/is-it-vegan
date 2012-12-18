@@ -1,0 +1,23 @@
+{
+    "name": "is it vegan?",
+    "description": "product live search redirection",
+    "keywords": ["vegan"],
+    "homepage": "http://vegan.devurl.info",
+    "license": "STRICT",
+    "authors": [
+        {
+            "name": "weather / e11group",
+            "email": "team@e11group.com",
+            "homepage": "http://www.e11group.com/"
+        }
+ ],
+    "require": {
+        "php": ">=5.3.0",
+        "mustache/mustache": "2.*",
+        "phpunit/phpunit": "*",
+        "codegun/phpmailer-lite": "*",
+        "dg/dibi" :  "*"
+    }
+}
+
+

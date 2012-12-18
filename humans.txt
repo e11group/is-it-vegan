@@ -1,0 +1,17 @@
+    /* TEAM */
+    
+    Your title: weather corp / e11 group
+    Site: http://e11group.com
+    Location: Seattle, WA + Winter Park, FL
+
+                 
+    /* SITE */
+
+    Last update: 2012/12/18
+    Standards: HTML5, CSS3, PHP 5.3+, PSR-0 
+    Version Control: Git!
+    Dependency / Package Managers : Composer / Bower
+    Database Abstraction : Dibi
+    Templates : Mustaches
+    Front End : zurb foundation, jquery, modernizr
+    check out composer.json, components.json, config.rb for more
