@@ -1,3 +1,44 @@
+/* line 1, ../scss/app/_background.scss */
+body {
+  background: url(../images/background.png);
+  background: url(../images/background.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 1, ../scss/views/_index.scss */
+.index-title {
+  text-align: center;
+}
+/* line 5, ../scss/views/_index.scss */
+.index-title h1 {
+  font-family: Helvetica Neue , Helvetica, Arial, sans-serif;
+  font-size: 9em;
+  font-weight: strong;
+  color: #fff;
+}
+
+/* line 16, ../scss/views/_index.scss */
+.searcher {
+  text-align: center;
+}
+/* line 20, ../scss/views/_index.scss */
+.searcher .tag {
+  color: #fff;
+  font-size: 4em;
+  display: block;
+  padding-top: 75px;
+}
+
+/* line 31, ../scss/views/_index.scss */
+.search {
+  margin-top: 75px;
+  padding: 18px 54px 18px 18px !Important;
+  font-size: 3em;
+}
+
 /* IE7 SHIM */
 /* line 10, ../scss/style.scss */
 * {

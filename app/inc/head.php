@@ -42,7 +42,7 @@ $mustache = new Mustache_Engine(array(
 	<!-- Set the viewport width to device width for mobile -->
 	<meta name="viewport" content="width=device-width" />
 
-	<title>vegan or not</title>
+	<title>Is It Vegan?</title>
 
 	<!-- Included CSS Files -->
 	<link rel="stylesheet" href="<?php echo STYLE_DIR; ?>foundation.css">
