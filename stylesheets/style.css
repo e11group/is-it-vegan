@@ -8,6 +8,42 @@ body {
   background-size: cover;
 }
 
+/* The input. */
+/* Ordered list for display results. */
+/* line 4, ../scss/app/_search.scss */
+ol.mp_list {
+  background-color: #FFFFFF;
+  border-left: 1px solid #C0C0C0;
+  border-right: 1px solid #C0C0C0;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  z-index: 99999;
+}
+
+/* Each list item, regardless of success, error, etc. */
+/* line 15, ../scss/app/_search.scss */
+ol.mp_list li {
+  border-bottom: 1px solid #C0C0C0;
+  padding: 4px 4px 5px;
+}
+
+/* Each list item from a successful request. */
+/* Each list item that's selectable. */
+/* line 26, ../scss/app/_search.scss */
+ol.mp_list li.mp_selectable {
+  cursor: pointer;
+}
+
+/* Currently highlighted list item. */
+/* line 31, ../scss/app/_search.scss */
+ol.mp_list li.mp_highlighted {
+  background-color: #E0E0E0;
+}
+
+/* When a request is made that returns zero results. */
+/* When a request is made that doesn't meet the 'minChars' length option. */
+/* When a request is made that fails during the ajax request. */
 /* line 1, ../scss/views/_index.scss */
 .index-title {
   text-align: center;
@@ -40,7 +76,7 @@ body {
 }
 
 /* IE7 SHIM */
-/* line 10, ../scss/style.scss */
+/* line 12, ../scss/style.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;

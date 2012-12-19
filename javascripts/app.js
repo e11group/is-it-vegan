@@ -14,17 +14,32 @@
 
  require(['../components/jquery/jquery.min', '../components/jquery-marcopolo/build/jquery.marcopolo.min'], function(jQuery, mp) {
       
+
+    var status_one = '1';
+    var status_two = '2';
+    var status_zero = '0'
+
     $(document).ready( function() { 
 
       $('#userSearch').marcoPolo({
         
-         url: '../app/server/search',
+         url: '../app/server/search.php',
+
          formatItem: function (data, $item) {
-           return data.first_name + ' ' + data.last_name;
+           return data.name;
          },
  
          onSelect: function (data, $item) {
-          window.location = data.profile_url;
+
+          if (data.status = 1) {
+            window.location = status_one;
+          }
+           if (data.status = 2) {
+            window.location = status_two;
+          }
+           if (data.status == 0) {
+            window.location = status_zero;
+          }
         }
       });
 
