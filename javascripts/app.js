@@ -1,7 +1,9 @@
- requirejs.config({
+requirejs.config({
+  
    paths:{
+  
       jquery: '../components/jquery/jquery.min'
-      },
+  },
 
   shim: {
 
@@ -9,17 +11,15 @@
 
   }
 
-
 });
 
  require(['../components/jquery/jquery.min', '../components/jquery-marcopolo/build/jquery.marcopolo.min'], function(jQuery, mp) {
       
-
-    var status_one = '1';
-    var status_two = '2';
-    var status_zero = '0'
-
     $(document).ready( function() { 
+
+    var status_one = '1.html';
+    var status_two = '2.html';
+    var status_zero = '0.html';
 
       $('#userSearch').marcoPolo({
         
@@ -41,6 +41,7 @@
             window.location = status_zero;
           }
         }
+      
       });
 
     });

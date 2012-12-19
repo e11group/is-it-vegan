@@ -1,4 +1,4 @@
-/* line 1, ../scss/app/_background.scss */
+/* line 2, ../scss/app/_background.scss */
 body {
   background: url(../images/background.png);
   background: url(../images/background.png) no-repeat center center fixed;
@@ -9,34 +9,56 @@ body {
 }
 
 /* The input. */
+/* line 2, ../scss/app/_search.scss */
+input.mp_input {
+  border: 1px solid #000000;
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  outline: none;
+  padding: 3px;
+  width: 250px;
+}
+
 /* Ordered list for display results. */
-/* line 4, ../scss/app/_search.scss */
+/* line 13, ../scss/app/_search.scss */
 ol.mp_list {
   background-color: #FFFFFF;
   border-left: 1px solid #C0C0C0;
   border-right: 1px solid #C0C0C0;
   overflow: hidden;
   position: absolute;
-  width: 100%;
+  width: 80%;
   z-index: 99999;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
 }
 
 /* Each list item, regardless of success, error, etc. */
-/* line 15, ../scss/app/_search.scss */
+/* line 26, ../scss/app/_search.scss */
 ol.mp_list li {
   border-bottom: 1px solid #C0C0C0;
   padding: 4px 4px 5px;
 }
 
 /* Each list item from a successful request. */
+/* line 32, ../scss/app/_search.scss */
+ol.mp_list li.mp_item {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+/* line 39, ../scss/app/_search.scss */
+ol.mp_list li.mp_item:active {
+  background-color: #000;
+}
+
 /* Each list item that's selectable. */
-/* line 26, ../scss/app/_search.scss */
+/* line 47, ../scss/app/_search.scss */
 ol.mp_list li.mp_selectable {
   cursor: pointer;
 }
 
 /* Currently highlighted list item. */
-/* line 31, ../scss/app/_search.scss */
+/* line 56, ../scss/app/_search.scss */
 ol.mp_list li.mp_highlighted {
   background-color: #E0E0E0;
 }
@@ -51,7 +73,7 @@ ol.mp_list li.mp_highlighted {
 /* line 5, ../scss/views/_index.scss */
 .index-title h1 {
   font-family: Helvetica Neue , Helvetica, Arial, sans-serif;
-  font-size: 9em;
+  font-size: 6em;
   font-weight: strong;
   color: #fff;
 }
@@ -63,16 +85,16 @@ ol.mp_list li.mp_highlighted {
 /* line 20, ../scss/views/_index.scss */
 .searcher .tag {
   color: #fff;
-  font-size: 4em;
+  font-size: 2em;
   display: block;
-  padding-top: 75px;
+  padding: 50px 0;
 }
 
 /* line 31, ../scss/views/_index.scss */
 .search {
   margin-top: 75px;
   padding: 18px 54px 18px 18px !Important;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 /* IE7 SHIM */
