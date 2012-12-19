@@ -31,10 +31,10 @@ requirejs.config({
  
          onSelect: function (data, $item) {
 
-          if (data.status = 1) {
+          if (data.status == 1) {
             window.location = status_one;
           }
-           if (data.status = 2) {
+           if (data.status == 2) {
             window.location = status_two;
           }
            if (data.status == 0) {
